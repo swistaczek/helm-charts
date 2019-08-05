@@ -72,11 +72,11 @@ package_chart() {
 }
 
 release_charts() {
-    cr upload -o codecentric -r helm-charts
+    cr upload -o swistaczek -r helm-charts
 }
 
 update_index() {
-    cr index -o codecentric -r helm-charts -c https://codecentric.github.io/helm-charts
+    cr index -o swistaczek -r helm-charts -c https://swistaczek.github.io/helm-charts
 
     git config user.email "$GIT_EMAIL"
     git config user.name "$GIT_USERNAME"
